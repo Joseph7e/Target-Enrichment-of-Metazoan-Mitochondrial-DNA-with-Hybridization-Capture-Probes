@@ -3,7 +3,7 @@ code and tutorials for data analyses related to the manuscript submitted to Ecol
 
 
 
-# Figure 1: Count the number of mitochondrial genomes available on NCBI
+### Figure 1: Count the number of mitochondrial genomes available on NCBI
 
 ### Coverage per million reads (CPM) from BED
 
