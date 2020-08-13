@@ -1,6 +1,16 @@
 # Target-Enrichment-of-Metazoan-Mitochondrial-DNA-with-Hybridization-Capture-Probes-
 code and tutorials for data analyses related to the manuscript submitted to Ecological Indicators
 
+### Downloading the mitochondrial genomes available on NCBI
+The complete set of reference mitochondrial genomes is available from https://ftp.ncbi.nlm.nih.gov/refseq/release/mitochondrion/
+
+```bash
+## downlaod the data in BASH
+wget https://ftp.ncbi.nlm.nih.gov/refseq/release/mitochondrion/mitochondrion.1.1.genomic.fna.gz
+wget https://ftp.ncbi.nlm.nih.gov/refseq/release/mitochondrion/mitochondrion.2.1.genomic.fna.gz
+```
+
+
 ### FASTA and BED file with probe coverage
 
 BED file with probe coordinates and coverage. *mitochondrial-hybridcapture-targets.bed.gz*
@@ -12,20 +22,10 @@ cat mitochondrial_genomes_for_probe_design_masked_repeats_half1.fasta.gz mitocho
 ```
 
 
-### Downloading the mitochondrial genomes available on NCBI
-The complete set of reference mitochondrial genomes is available from https://ftp.ncbi.nlm.nih.gov/refseq/release/mitochondrion/
-
-```bash
-## downlaod the data in BASH
-wget https://ftp.ncbi.nlm.nih.gov/refseq/release/mitochondrion/mitochondrion.1.1.genomic.fna.gz
-wget https://ftp.ncbi.nlm.nih.gov/refseq/release/mitochondrion/mitochondrion.2.1.genomic.fna.gz
-```
-
-
-
 ### Coverage per million reads (CPM) from BED
 
 Coverage data was then normalized based on the starting read counts to produce coverage per million reads (CPM) using an in-house python script. 
+
 
 ### Annotation correction
 
