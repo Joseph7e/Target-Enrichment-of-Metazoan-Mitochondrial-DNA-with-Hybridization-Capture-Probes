@@ -1,9 +1,18 @@
 # Target-Enrichment-of-Metazoan-Mitochondrial-DNA-with-Hybridization-Capture-Probes-
 code and tutorials for data analyses related to the manuscript submitted to Ecological Indicators
 
+### FASTA and BED file with probe coverage
+
+### Downloading the mitochondrial genomes available on NCBI
+The complete set of reference mitochondrial genomes is available from https://ftp.ncbi.nlm.nih.gov/refseq/release/mitochondrion/
+
+```bash
+## downlaod the data in BASH
+wget https://ftp.ncbi.nlm.nih.gov/refseq/release/mitochondrion/mitochondrion.1.1.genomic.fna.gz
+wget https://ftp.ncbi.nlm.nih.gov/refseq/release/mitochondrion/mitochondrion.2.1.genomic.fna.gz
+```
 
 
-### Figure 1: Count the number of mitochondrial genomes available on NCBI
 
 ### Coverage per million reads (CPM) from BED
 
