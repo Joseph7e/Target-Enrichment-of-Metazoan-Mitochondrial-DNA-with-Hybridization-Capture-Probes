@@ -3,9 +3,9 @@ code and tutorials for data analyses related to the manuscript submitted to Ecol
 
 ### FASTA and BED file with probe coverage
 
-BED file with probe coordinates and coverage. mitochondrial-hybridcapture-targets.bed.gz
+BED file with probe coordinates and coverage. *mitochondrial-hybridcapture-targets.bed.gz*
 
-The FASTA file used to design the probes was divided into two halfs to adhear to githubs 25 MB per file size limit. Use the gnu 'cat' command to combine these files together before any analyses.
+The FASTA file used to design the probes was divided into two halfs to adhear to githubs 25 MB per file size limit. Use the  'cat' command in BASH to combine these files together before any analyses.
 
 ```bash
 cat mitochondrial_genomes_for_probe_design_masked_repeats_half1.fasta.gz mitochondrial_genomes_for_probe_design_masked_repeats_half1.fasta.gz > mitos.fasta
