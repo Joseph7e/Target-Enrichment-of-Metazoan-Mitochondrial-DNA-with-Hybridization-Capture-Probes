@@ -11,7 +11,7 @@ wget https://ftp.ncbi.nlm.nih.gov/refseq/release/mitochondrion/mitochondrion.2.1
 ```
 
 
-### FASTA and BED file with probe coverage
+### FASTA and BED file with probe locations
 
 BED file with probe coordinates and coverage. *mitochondrial-hybridcapture-targets.bed.gz*
 
@@ -38,4 +38,23 @@ Circular figures depicting mitochondrial genome annotations and coverage were co
 #### Rscripts for box and scatter plots.
 
 
-#### P-distance calculations
+#### Average nucleotide identity with FASTANI
+
+Starting Data: 
+
+1.) Reference sequences used for probe design (seperated into individual fastas)
+2.) Mitochondrial genomes from this study
+
+
+```bash
+#step 1: divide mutlifasta into individual fastas
+python3 mitochondrial-enrichment-paper/multi-fasta-to-single-fasta.py <reference_multi_fasta>
+#move all the output fastas into a directory called 'reference_fastas'
+
+#step 2: create list of reference sequences and wuery sequences
+readlink -f reference_fastas/* > probe_list.txt
+readlink -f study_fastas/* > query_list.txt
+
+# step 3: run fastaANI on all sequences and identify the ANI for the top match
+
+```
