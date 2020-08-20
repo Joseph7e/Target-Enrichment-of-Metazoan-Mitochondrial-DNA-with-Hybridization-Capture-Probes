@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# Author: JOseph Sevigny
+# Author: Joseph Sevigny
 # Purpose: Provide enrichment data for all contigs in a genome assembly.
 # USAGE: python3 annotate_mitochondria.py <fasta> <coverage_table1> <coverage_table2> <taxonomy_table> <blast_results>
 
