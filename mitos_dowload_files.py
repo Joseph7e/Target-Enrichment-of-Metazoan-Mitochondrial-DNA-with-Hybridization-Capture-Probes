@@ -1,4 +1,6 @@
-#!/mnt/lustre/software/linuxbrew/colsa/bin/python3
+#!/usr/bin/python3
+
+# USAGE: python3 mitos_download_files.py <mitos_URL>
 
 import sys,os
 
