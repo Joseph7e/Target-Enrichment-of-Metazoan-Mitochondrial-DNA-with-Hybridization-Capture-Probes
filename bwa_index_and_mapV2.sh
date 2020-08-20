@@ -6,16 +6,6 @@
 module purge
 module load linuxbrew/colsa
 
-#sample="Sample_199440773"
-#
-#contig_ref=$sample"contigs.fasta"
-#reads_for=/mnt/lustre/hcgs/joseph7e/insert_size_experiment/Project_Fr*/$sample/paired-1.fastq.gz
-#reads_rev=/mnt/lustre/hcgs/joseph7e/insert_size_experiment/Project_Fr*/$sample/paired-2.fastq.gz
-
-
-
-
-
 # Assembly Reference
 contig_ref=$1
 # Forward Reads
