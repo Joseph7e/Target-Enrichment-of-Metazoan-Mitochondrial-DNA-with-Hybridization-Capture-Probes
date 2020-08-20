@@ -21,10 +21,15 @@ The FASTA file used to design the probes was divided into two halfs to adhear to
 cat mitochondrial_genomes_for_probe_design_masked_repeats_half1.fasta.gz mitochondrial_genomes_for_probe_design_masked_repeats_half1.fasta.gz > mitos.fasta
 ```
 
+### genome assembly and assessment pipeline.
+
 
 ### Coverage per million reads (CPM) from BED
 
-Coverage data was then normalized based on the starting read counts to produce coverage per million reads (CPM) using an in-house python script. 
+Coverage data was then normalized based on the starting read counts to produce coverage per million reads (CPM) using an in-house python script called annotate_mitochondria.py. 
+
+python3 annotate_mitochondria.py <fasta> <coverage_table1> <coverage_table2> <taxonomy_table> <blast_results>
+
 
 
 ### Annotation correction
