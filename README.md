@@ -23,6 +23,12 @@ cat mitochondrial_genomes_for_probe_design_masked_repeats_half1.fasta.gz mitocho
 
 ### genome assembly and assessment pipeline.
 
+This script will take a set of paired-end read files and run genome assembly and assessment tools (QUAST, BWA, BUSCO, BLOBTOOLS, BLAST).
+It assumes you have a dircetory named 'Sample_SAMPLENAME' that contains two fastq sequences with _R1_ and _R2_ in the names. 
+
+```bash
+assembly_pipeline.sh <Sample_directory>
+```
 
 ### Coverage per million reads (CPM) from BED
 
