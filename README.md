@@ -54,13 +54,19 @@ The following script will download the results to the server.
 python3 mitos_dowload_files.py <results_url>
 ```
 
-### Coverage data and CIRCOS
+### Creation of circos plots
 
-Circular figures depicting mitochondrial genome annotations and coverage were constructed using custom scripts in Python v3.6.1 and the Circos software package (Kryzywinski et al. 2009). Creation of boxplots, and scatter plots were completed in R Studio v 3.5.1 using ggplot2 (Wickham 2016).
+Circular figures depicting mitochondrial genome annotations and coverage were constructed using custom scripts in Python v3.6.1 and the Circos software package (Kryzywinski et al. 2009). 
 
+Tested and applied with circos v 0.69.3. A help menu is available for this program, use the --help option.
+
+
+```bash
+python3 circos-mitogenome.py <fasta> <gff> <bed1> <bed2>
+```
 
 #### Rscripts for box and scatter plots.
-
+Creation of boxplots, and scatter plots were completed in R Studio v 3.5.1 using ggplot2 (Wickham 2016).
 
 #### Average nucleotide identity with FASTANI
 
