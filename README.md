@@ -69,6 +69,8 @@ python3 circos-mitogenome.py <fasta> <gff> <bed1> <bed2>
 #### Rscripts for box and scatter plots.
 Creation of boxplots, and scatter plots were completed in R Studio v 3.5.1 using ggplot2 (Wickham 2016).
 
+mito-erichment-box-scatters.r
+
 #### Average nucleotide identity with FASTANI
 
 Starting Data: 
