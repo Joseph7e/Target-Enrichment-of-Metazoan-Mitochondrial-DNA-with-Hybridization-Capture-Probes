@@ -10,7 +10,7 @@ wget https://ftp.ncbi.nlm.nih.gov/refseq/release/mitochondrion/mitochondrion.1.1
 wget https://ftp.ncbi.nlm.nih.gov/refseq/release/mitochondrion/mitochondrion.2.1.genomic.fna.gz
 ```
 
-The R script edited from Dunn et al and for construction of Figure1 is called.
+The R script edited from Dunn et al and for construction of Figure1 is called. phylo-availability.r
 
 ### FASTA and BED file with probe locations
 
