@@ -21,7 +21,7 @@ The FASTA file used to design the probes was divided into two halfs to adhear to
 cat mitochondrial_genomes_for_probe_design_masked_repeats_half1.fasta.gz mitochondrial_genomes_for_probe_design_masked_repeats_half1.fasta.gz > mitos.fasta
 ```
 
-### genome assembly and assessment pipeline.
+### Genome assembly and assessment pipeline.
 
 This script will take a set of paired-end read files and run genome assembly and assessment tools (QUAST, BWA, BUSCO, BLOBTOOLS, BLAST).
 It assumes you have a dircetory named 'Sample_SAMPLENAME' that contains two fastq sequences with _R1_ and _R2_ in the names. 
@@ -34,12 +34,18 @@ assembly_pipeline.sh <Sample_directory>
 
 Coverage data was then normalized based on the starting read counts to produce coverage per million reads (CPM) using an in-house python script called annotate_mitochondria.py. 
 
+```bash
 python3 annotate_mitochondria.py <fasta> <coverage_table1> <coverage_table2> <taxonomy_table> <blast_results>
+```
 
+### Download mitochondrial annotations
+Annotations were completed with the mitos web server. http://mitos.bioinf.uni-leipzig.de/index.py.
 
+The following script will download the results to the server.
 
-### Annotation correction
-
+```bash
+python3 mitos_dowload_files.py <results_url>
+```
 
 ### Coverage data and CIRCOS
 
