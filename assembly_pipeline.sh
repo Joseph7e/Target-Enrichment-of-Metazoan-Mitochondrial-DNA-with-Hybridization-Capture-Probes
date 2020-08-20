@@ -13,10 +13,10 @@ module load linuxbrew/colsa
 # for f in *_R1_*; do echo $f; s=$(echo $f | awk -F'_' '{print $1"-"$2"-"$3}'); echo $s; r=$(echo $f | sed 's/_R1_/_R2_/g'); echo $r; mkdir Sample_$s; mv $f Sample_$s; mv $r Sample_$s; done
 
 
-
-path_to_round1="" # "/mnt/lustre/hcgs/joseph7e/HCGS/people/Dorota/Project_mtMMG-MitoCap" #"/mnt/lustre/hcgs/joseph7e/HCGS/people/Dorota/Project_mtMMG/"#"/mnt/lustre/hcgs/joseph7e/HCGS/people/Kayala_Bieser/Project_Bieser/"#"/mnt/lustre/hcgs/joseph7e/GOMRI/Project_Folders/Project_GOMRI-KAPA_round2/"
-path_to_round2="" # "/mnt/lustre/hcgs/joseph7e/HCGS/people/Dorota/Project_mtMMG" #"/mnt/lustre/hcgs/joseph7e/GOMRI/Project_Folders/Project_GOMRI-KAPA_round3/"
-path_to_round3="" # "/mnt/lustre/hcgs/joseph7e/HCGS/people/Dorota/Project_mtMMG_round1" #"/mnt/lustre/hcgs/joseph7e/GOMRI/Project_Folders/Project_GOMRI-KAPA_round4/"
+# Use multiple paths if you need to combine read datasets
+path_to_round1="" 
+path_to_round2="" 
+path_to_round3="" 
 
 reverse_read_identifier=_R2_
 
