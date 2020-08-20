@@ -30,6 +30,13 @@ It assumes you have a dircetory named 'Sample_SAMPLENAME' that contains two fast
 assembly_pipeline.sh <Sample_directory>
 ```
 
+
+### Calculate coverage per contig using BWA and samtools
+
+```bash
+bwa_index_and_mapV2.sh <reference_fasta> <forward_reads> <reverse_reads> <sample_name>
+```
+
 ### Coverage per million reads (CPM) from BED
 
 Coverage data was then normalized based on the starting read counts to produce coverage per million reads (CPM) using an in-house python script called annotate_mitochondria.py. 
