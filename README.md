@@ -90,5 +90,5 @@ readlink -f reference_fastas/* > probe_list.txt
 readlink -f study_fastas/* > query_list.txt
 
 # step 3: run fastaANI on all sequences and identify the ANI for the top match
-
+fastANI --output matrix --rl sequence.fasta --ql sequence.fasta
 ```
